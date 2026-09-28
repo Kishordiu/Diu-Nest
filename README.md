@@ -1,43 +1,37 @@
 # DIU NEST
 
-> **Evidence-first procurement intelligence powered by live web data.**
+![Cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=DIU%20NEST&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=PROCUREMENT%20INTELLIGENCE%20%2F%20EVIDENCE&descColor=999991&descSize=12&descAlignY=66&animation=fadeIn)
 
-DIU NEST explores a deterministic procurement workflow that combines live supplier discovery, evidence collection, cost analysis, risk evaluation, challenge workflows and auditable decision records.
+> **PROCUREMENT INTELLIGENCE / EVIDENCE.**
 
-## The workflow
+## THE PREMISE
 
-~~~text
-Requirement → Discovery → Evidence → Cost → Risk → Challenge → Simulation → Firewall → Approval
-~~~
+DIU NEST is an evidence-first procurement workspace: discover suppliers, attach proof to claims, calculate cost and risk, challenge a decision, simulate outcomes, then keep an auditable approval trail.
 
-## Highlights
-- Live web intelligence for supplier discovery
-- Evidence-linked claims rather than unsupported assertions
-- Deterministic cost and risk calculations
-- Supplier challenge / decision-review workflow
-- Procurement compliance checks
-- Exportable decision records
+## THE EXPERIENCE
 
-## Architecture
-**Frontend:** Next.js · React · Tailwind CSS · Framer Motion
+**DIU NEST is an evidence-first procurement workspace: discover suppliers, attach proof to claims, calculate cost and risk, challenge a decision, simulate outcomes, then keep an auditable approval trail.**
 
-**Intelligence:** Tavily web search · Gemini structured extraction
+## THE SYSTEM
 
-**State:** React Context / mission workflow
+Evidence before confidence. | A supplier claim should point somewhere. | Procurement decisions should remain inspectable after the meeting.
 
-**Export:** jsPDF · html2canvas
+## THE STACK
 
-## Local development
-~~~bash
-npm install
-cp .env.example .env.local
-npm run dev
-~~~
+Next.js and Framer Motion shape the mission-style frontend. Tavily provides web discovery and Gemini is planned for structured extraction; the product flow separates discovery, evidence, analysis and approval states.
 
-Configure API credentials only in local/hosting environment variables. Never commit secrets.
+## RUN
 
-## Status
-**Procurement intelligence prototype**
+```bash
+Procurement-intelligence prototype
+```
 
-## Author
-**K. Kishor Kumar** · [GitHub @Kishordiu](https://github.com/Kishordiu)
+## PROJECT STATE
+
+**Next.js · React · TypeScript · Tailwind CSS · Framer Motion · Tavily · Gemini**
+
+This README intentionally distinguishes implemented behaviour from future integrations so the project can evolve without overstating what exists today.
+
+---
+
+<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
