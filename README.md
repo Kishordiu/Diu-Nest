@@ -22,8 +22,20 @@ Next.js and Framer Motion shape the mission-style frontend. Tavily provides web 
 
 ## RUN
 
+**Requirements:** Node.js 20+ and npm.
+
 ```bash
-Procurement-intelligence prototype
+npm ci
+cp .env.example .env.local
+# Set TAVILY_API_KEY in .env.local before using web-discovery features.
+npm run dev
+```
+
+For a production build:
+
+```bash
+npm run build
+npm start
 ```
 
 ## PROJECT STATE
