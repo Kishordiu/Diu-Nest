@@ -65,7 +65,7 @@ export default function PurchaseOrder({ onNext }: PurchaseOrderProps) {
           
           <div className="mb-6">
             <h3 className="text-lg font-bold border-b border-gray-200 mb-2">REQUIREMENT</h3>
-            <p className="mb-2"><strong>Intent:</strong> {mission.requirement?.rawIntent}</p>
+            <p className="mb-2"><strong>Intent:</strong> {mission.requirement?.rawText || mission.rawInput}</p>
             <ul className="list-disc pl-5">
               {mission.requirement?.allConstraints.map((c, i) => (
                 <li key={i}>{c.field}: {c.value} ({c.confidence}%)</li>
