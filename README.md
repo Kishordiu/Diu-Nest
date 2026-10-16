@@ -39,7 +39,7 @@ Open the local URL printed by Next.js. A production build can be checked with `n
 
 ## ENVIRONMENT AND SECURITY
 
-The Tavily credential previously appeared in a public example file and has been removed from the latest version. Rotate/revoke that key in Tavily before using the integration again; deleting it from the latest commit does not erase Git history. Keep all actual keys in ignored local environment files or deployment secrets. The optional AI provider integration is not presented as live.
+The example contains placeholders only. Keep real credentials in ignored local environment files or deployment secrets. If a credential has ever been committed, revoke or rotate it; deleting it from the latest commit does not erase Git history. The optional AI provider integration is not presented as live.
 
 ## PROJECT STATE
 
