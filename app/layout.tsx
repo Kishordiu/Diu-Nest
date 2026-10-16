@@ -1,26 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Sora } from "next/font/google";
+import type { CSSProperties } from "react";
 import "./globals.css";
 import { CustomCursor } from "@/components/background/CustomCursor";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono-var",
-  display: "swap",
-});
 
 import { LoadingWrapper } from "@/components/layout/LoadingWrapper";
 
@@ -39,7 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${sora.variable} ${jetbrainsMono.variable} font-sans antialiased bg-[#FBFBF8] text-[#181922] overflow-x-hidden`}
+        className="font-sans antialiased bg-[#FBFBF8] text-[#181922] overflow-x-hidden"
+        style={{
+          "--font-display": "Sora, Inter, ui-sans-serif, system-ui, sans-serif",
+          "--font-sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+          "--font-mono": "JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace",
+        } as CSSProperties}
       >
         {/* Custom cursor (desktop only) */}
         <CustomCursor />
