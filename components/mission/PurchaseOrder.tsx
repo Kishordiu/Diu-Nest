@@ -81,7 +81,7 @@ export default function PurchaseOrder({ onNext }: PurchaseOrderProps) {
                 <div key={i} className={`mb-3 p-3 rounded ${s.id === mission.selectedSupplierId ? 'bg-[#F7F5FF] border border-[#6C63FF]' : 'bg-gray-50'}`}>
                   <p className="font-bold">{s.name.value} {s.id === mission.selectedSupplierId && '(SELECTED)'}</p>
                   <p>True Cost: &#8377;{cst.estimatedTotal.toLocaleString('en-IN')}</p>
-                  <p>Confidence: {s.confidenceScore}%</p>
+                  <p>Confidence: {s.dataConfidence}%</p>
                 </div>
               );
             })}
