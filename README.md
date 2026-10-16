@@ -22,21 +22,24 @@ Next.js and Framer Motion shape the mission-style frontend. Tavily provides web 
 
 ## RUN
 
-**Requirements:** Node.js 20+ and npm.
+Requirements: Node.js and npm. The repository includes `.env.example`; it contains placeholders only.
 
 ```bash
 npm ci
 cp .env.example .env.local
-# Set TAVILY_API_KEY in .env.local before using web-discovery features.
+```
+
+Replace `YOUR_TAVILY_API_KEY` in `.env.local` with a **newly issued** key from Tavily. Do not commit local environment files. Then run:
+
+```bash
 npm run dev
 ```
 
-For a production build:
+Open the local URL printed by Next.js. A production build can be checked with `npm run build`.
 
-```bash
-npm run build
-npm start
-```
+## ENVIRONMENT AND SECURITY
+
+The Tavily credential previously appeared in a public example file and has been removed from the latest version. Rotate/revoke that key in Tavily before using the integration again; deleting it from the latest commit does not erase Git history. Keep all actual keys in ignored local environment files or deployment secrets. The optional AI provider integration is not presented as live.
 
 ## PROJECT STATE
 
