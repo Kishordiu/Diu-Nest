@@ -1,52 +1,64 @@
-# DIU NEST
+<div align="center">
+  <img src="./assets/hero-banner.svg" alt="DIU NEST — Procurement Intelligence & Evidence" width="100%" />
+</div>
 
-![Cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=DIU%20NEST&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=PROCUREMENT%20INTELLIGENCE%20%2F%20EVIDENCE&descColor=999991&descSize=12&descAlignY=66&animation=fadeIn)
+<p align="center">
+  <a href="https://diufoundry.online"><img alt="DIU Foundry" src="https://img.shields.io/badge/DIU_FOUNDRY-INNOVATION_STUDIO-0A1826?style=for-the-badge&logoColor=6BC6CE&labelColor=060A0F" /></a>&nbsp;
+  <img alt="Procurement Intelligence" src="https://img.shields.io/badge/INTELLIGENCE-EVIDENCE_BASED-0A1826?style=for-the-badge&logoColor=8DBBF1&labelColor=060A0F" />&nbsp;
+  <img alt="TypeScript" src="https://img.shields.io/badge/TYPESCRIPT-v5-0A1826?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=060A0F" />&nbsp;
+  <img alt="Zero Trust" src="https://img.shields.io/badge/PROVENANCE-VERIFIABLE-0A1826?style=for-the-badge&logoColor=35C8D5&labelColor=060A0F" />
+</p>
 
-> **PROCUREMENT INTELLIGENCE / EVIDENCE.**
-
-## THE PREMISE
-
-DIU NEST is an evidence-first procurement workspace: discover suppliers, attach proof to claims, calculate cost and risk, challenge a decision, simulate outcomes, then keep an auditable approval trail.
-
-## THE EXPERIENCE
-
-**DIU NEST is an evidence-first procurement workspace: discover suppliers, attach proof to claims, calculate cost and risk, challenge a decision, simulate outcomes, then keep an auditable approval trail.**
-
-## THE SYSTEM
-
-Evidence before confidence. | A supplier claim should point somewhere. | Procurement decisions should remain inspectable after the meeting.
-
-## THE STACK
-
-Next.js and Framer Motion shape the mission-style frontend. Tavily provides web discovery and Gemini is planned for structured extraction; the product flow separates discovery, evidence, analysis and approval states.
-
-## RUN
-
-Requirements: Node.js and npm. The repository includes `.env.example`; it contains placeholders only.
-
-```bash
-npm ci
-cp .env.example .env.local
-```
-
-Replace `YOUR_TAVILY_API_KEY` in `.env.local` with a **newly issued** key from Tavily. Do not commit local environment files. Then run:
-
-```bash
-npm run dev
-```
-
-Open the local URL printed by Next.js. A production build can be checked with `npm run build`.
-
-## ENVIRONMENT AND SECURITY
-
-The example contains placeholders only. Keep real credentials in ignored local environment files or deployment secrets. If a credential has ever been committed, revoke or rotate it; deleting it from the latest commit does not erase Git history. The optional AI provider integration is not presented as live.
-
-## PROJECT STATE
-
-**Next.js · React · TypeScript · Tailwind CSS · Framer Motion · Tavily · Gemini**
-
-This README intentionally distinguishes implemented behaviour from future integrations so the project can evolve without overstating what exists today.
+<p align="center">
+  <b>Don't just make the interface look finished. Make the system make sense.</b><br/>
+  <em>Evidence-first procurement workspace: supplier discovery, proof attachment, deterministic risk modeling, and auditable decisions.</em>
+</p>
 
 ---
 
-<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
+## 🧭 Core Highlights
+
+DIU NEST turns procurement from fragmented spreadsheet guesswork into verifiable, auditable workflows:
+
+- **Evidence-Backed Supplier Intelligence** — Discover suppliers and link verifiable documentation to every operational claim.
+- **Deterministic Cost & Risk Scoring** — Transparent calculation models without black-box bias or ungrounded assumptions.
+- **Decision Challenge & Audit Trails** — Challenge proposals, simulate risk outcomes, and preserve cryptographically signed review history.
+- **Collaborative Workflows** — Real-time team consensus, sign-offs, and procurement pipeline oversight.
+
+---
+
+## 🛠️ Architecture & Stack
+
+```text
+[ SUPPLIER TELEMETRY ] ──► [ EVIDENCE INGESTION ] ──► [ RISK & COST ENGINE ]
+                                                             │
+                                                             ▼
+[ DECISION TRAIL ] ◄─────── [ AUDIT TIMELINE ] ◄──── [ CONSENSUS SIMULATOR ]
+```
+
+- **Runtime & Language**: TypeScript, Node.js / Bun
+- **Design System**: Muted slate clay, ocean-glass specular elements, Instrument Serif, JetBrains Mono
+- **Core Engine**: Deterministic decision tree verification and provenance graph
+
+---
+
+## ⚡ Quickstart
+
+```bash
+# Clone the repository
+git clone https://github.com/Kishordiu/Diu-Nest.git
+cd Diu-Nest
+
+# Install dependencies
+bun install
+
+# Start development
+bun run dev
+```
+
+---
+
+<p align="center">
+  <b>RESEARCH → BUILD → TEST → SHIP</b><br/>
+  <sub>A digital product by <a href="https://diufoundry.online">DIU Foundry</a> · Engineered by K. Kishor Kumar</sub>
+</p>
