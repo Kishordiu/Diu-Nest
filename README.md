@@ -1,64 +1,67 @@
 <div align="center">
-  <img src="./assets/hero-banner.svg" alt="DIU NEST — Procurement Intelligence & Evidence" width="100%" />
+  <img src="./assets/hero-banner.svg" alt="DIU NEST — procurement intelligence and evidence workspace artwork" width="100%" />
 </div>
 
 <p align="center">
-  <a href="https://diufoundry.online"><img alt="DIU Foundry" src="https://img.shields.io/badge/DIU_FOUNDRY-INNOVATION_STUDIO-0A1826?style=for-the-badge&logoColor=6BC6CE&labelColor=060A0F" /></a>&nbsp;
-  <img alt="Procurement Intelligence" src="https://img.shields.io/badge/INTELLIGENCE-EVIDENCE_BASED-0A1826?style=for-the-badge&logoColor=8DBBF1&labelColor=060A0F" />&nbsp;
-  <img alt="TypeScript" src="https://img.shields.io/badge/TYPESCRIPT-v5-0A1826?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=060A0F" />&nbsp;
-  <img alt="Zero Trust" src="https://img.shields.io/badge/PROVENANCE-VERIFIABLE-0A1826?style=for-the-badge&logoColor=35C8D5&labelColor=060A0F" />
+  <a href="https://diufoundry.online"><img alt="DIU Foundry" src="https://img.shields.io/badge/DIU_FOUNDRY-INNOVATION_STUDIO-0A1826?style=for-the-badge&logoColor=6BC6CE&labelColor=060A0F" /></a>
+  <img alt="Product area" src="https://img.shields.io/badge/PRODUCT-PROCUREMENT_WORKSPACE-0A1826?style=for-the-badge&logoColor=8DBBF1&labelColor=060A0F" />
+  <img alt="Status" src="https://img.shields.io/badge/STATUS-PROTOTYPE-0A1826?style=for-the-badge&logoColor=35C8D5&labelColor=060A0F" />
 </p>
 
-<p align="center">
-  <b>Don't just make the interface look finished. Make the system make sense.</b><br/>
-  <em>Evidence-first procurement workspace: supplier discovery, proof attachment, deterministic risk modeling, and auditable decisions.</em>
-</p>
+# DIU NEST
 
----
+**Make procurement decisions easier to inspect.**
 
-## 🧭 Core Highlights
+DIU NEST explores how a procurement team could organise supplier information, supporting evidence, risk factors, and decision notes in one focused workspace. It is a product prototype for evidence-aware review flows rather than a verified supplier-data service.
 
-DIU NEST turns procurement from fragmented spreadsheet guesswork into verifiable, auditable workflows:
+## The workflow
 
-- **Evidence-Backed Supplier Intelligence** — Discover suppliers and link verifiable documentation to every operational claim.
-- **Deterministic Cost & Risk Scoring** — Transparent calculation models without black-box bias or ungrounded assumptions.
-- **Decision Challenge & Audit Trails** — Challenge proposals, simulate risk outcomes, and preserve cryptographically signed review history.
-- **Collaborative Workflows** — Real-time team consensus, sign-offs, and procurement pipeline oversight.
+- **Supplier records:** Keep the key details of a supplier organised in a consistent interface.
+- **Evidence references:** Attach or reference supporting material while reviewing a claim.
+- **Cost and risk review:** Compare decision factors and inspect the reasoning presented by the UI.
+- **Decision notes:** Capture review and sign-off steps in a clearer workflow.
 
----
-
-## 🛠️ Architecture & Stack
+## A prototype view of the system
 
 ```text
-[ SUPPLIER TELEMETRY ] ──► [ EVIDENCE INGESTION ] ──► [ RISK & COST ENGINE ]
-                                                             │
-                                                             ▼
-[ DECISION TRAIL ] ◄─────── [ AUDIT TIMELINE ] ◄──── [ CONSENSUS SIMULATOR ]
+Supplier records
+       │
+       ▼
+Evidence references
+       │
+       ▼
+Cost / risk review UI
+       │
+       ▼
+Decision notes and review history
 ```
 
-- **Runtime & Language**: TypeScript, Node.js / Bun
-- **Design System**: Muted slate clay, ocean-glass specular elements, Instrument Serif, JetBrains Mono
-- **Core Engine**: Deterministic decision tree verification and provenance graph
+## Stack
 
----
+Next.js · React · TypeScript · Tailwind CSS · Framer Motion · Zod
 
-## ⚡ Quickstart
+## Run locally
+
+**Requirements:** Node.js and npm (or a compatible package manager).
 
 ```bash
-# Clone the repository
 git clone https://github.com/Kishordiu/Diu-Nest.git
 cd Diu-Nest
-
-# Install dependencies
-bun install
-
-# Start development
-bun run dev
+npm install
+npm run dev
 ```
+
+For a production build:
+
+```bash
+npm run build
+npm start
+```
+
+## Prototype boundary
+
+The current package does not include a dedicated database client or cryptographic signing service. Do not assume that supplier documents have been independently verified, that an audit trail is cryptographically signed, or that collaboration is live across multiple users. Validate the storage model, scoring formulas, permission boundaries, and external records before using this project for real procurement decisions or sensitive supplier information.
 
 ---
 
-<p align="center">
-  <b>RESEARCH → BUILD → TEST → SHIP</b><br/>
-  <sub>A digital product by <a href="https://diufoundry.online">DIU Foundry</a> · Engineered by K. Kishor Kumar</sub>
-</p>
+<p align="center"><sub>DIU FOUNDRY · PRODUCT / SYSTEMS / EVIDENCE</sub></p>
